@@ -1,0 +1,19 @@
+projection implementation in class ZBP_C_RAP100_TRAVKGRV unique;
+strict ( 2 );
+use draft;
+define behavior for ZC_RAP100_TRAVKGRV alias ZcRap100Travkgrv
+use etag
+
+{
+  use create;
+  use update;
+  use delete;
+
+  use action Edit;
+  use action Activate;
+  use action Discard;
+  use action Resume;
+  use action Prepare;
+
+  use action deductDiscount;
+}
